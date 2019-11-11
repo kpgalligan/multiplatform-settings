@@ -19,7 +19,7 @@ steps:
     jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml;**/*Test/binary/**.bin'
+    testResultsFiles: '**/TEST-*.xml'
     tasks: 'clean build check publishToMavenLocal'
 
 - task: Gradle@2
@@ -31,5 +31,5 @@ steps:
     jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml;**/*Test/binary/**.bin'
+    testResultsFiles: '**/TEST-*.xml'
     tasks: 'clean build check'
