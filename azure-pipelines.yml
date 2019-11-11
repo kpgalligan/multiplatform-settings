@@ -20,16 +20,16 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml;**/*Test/binary/**.bin'
-    tasks: 'clean build check'
+    tasks: 'clean build check publishToMavenLocal'
 
-- task: Gradle@2
-  inputs:
-    workingDirectory: 'sample'
-    gradleWrapperFile: 'gradlew'
-    gradleOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml;**/*Test/binary/**.bin'
-    tasks: 'clean build check'
+# - task: Gradle@2
+#   inputs:
+#     workingDirectory: 'sample'
+#     gradleWrapperFile: 'gradlew'
+#     gradleOptions: '-Xmx3072m'
+#     javaHomeOption: 'JDKVersion'
+#     jdkVersionOption: '1.8'
+#     jdkArchitectureOption: 'x64'
+#     publishJUnitResults: true
+#     testResultsFiles: '**/TEST-*.xml;**/*Test/binary/**.bin'
+#     tasks: 'clean build check'
