@@ -7,7 +7,7 @@ trigger:
 - azure
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'macos-10.15'
 
 steps:
 - task: Gradle@2
