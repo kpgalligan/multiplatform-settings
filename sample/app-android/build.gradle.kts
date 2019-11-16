@@ -42,6 +42,10 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }
     }
+
+    packagingOptions {
+        exclude("META-INF/*.kotlin_module")
+    }
 }
 
 dependencies {

@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 Russell Wolf
+ * Copyright 2019 Russell Wolf
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.russhwolf.settings.example
+package com.russhwolf.settings.example.android
 
 import android.os.Bundle
 import android.preference.PreferenceManager
@@ -29,6 +29,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.russhwolf.settings.AndroidSettings
 import com.russhwolf.settings.ExperimentalListener
+import com.russhwolf.settings.example.SettingConfig
+import com.russhwolf.settings.example.SettingsRepository
 
 @UseExperimental(ExperimentalListener::class)
 class MainActivity : AppCompatActivity() {
