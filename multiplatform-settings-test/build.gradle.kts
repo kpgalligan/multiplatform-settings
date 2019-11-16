@@ -146,4 +146,4 @@ task("iosTest") {
         }
     }
 }
-tasks["allTests"].dependsOn("iosTest")
+//tasks["allTests"].dependsOn("iosTest")
