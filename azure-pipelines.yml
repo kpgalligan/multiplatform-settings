@@ -20,7 +20,7 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
-    tasks: 'clean build check publishToMavenLocal'
+    tasks: 'clean build publishToMavenLocal'
 
 - task: Gradle@2
   inputs:
